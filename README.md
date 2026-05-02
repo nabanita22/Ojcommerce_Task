@@ -136,3 +136,71 @@ Electronics products are ~25x more expensive than Grocery — meaning even a sma
 
       Kolkata &  Ahmedabad - Low poor seller concentration + high best seller % ,most reliable supply markets despite being mid-size
 
+
+# ORDERS DATA
+
+<in orders status what does it mean by shipped ? are those orders lost?>
+
+1. H2 Order Volume (Jul-Dec): 2024 vs 2025
+
+   Order volume dipped slightly by -1.47% (496 orders) in H2 2025 vs H2 2024 — the platform is not growing, it's marginally shrinking.
+
+2. YOY Order Volumn Analysis:
+
+2024 (Jul-Dec) 
+
+October was the peak (5,791) — festive season boost
+November was the worst month (5,504) — sharp post-festive drop
+
+2025 (Jan-Dec) 
+
+February was the lowest (5,163) — typical post-holiday slowdown
+October again peaked (5,722) — festive pattern repeating
+Overall trend is flat — no real growth through the year
+
+H2 Comparison (2024 vs 2025) 
+
+Both years follow the same pattern — dip in August/September, peak in October
+2025 is slightly below 2024 in most months
+November and December 2025 are noticeably weaker than 2024.
+
+3. Cancellation Rate (7.3% - 8.8%)
+
+Range is very tight — cancellations are consistent, not spiking
+Highest: October 2024 (8.79%) — post festive season impulse orders being cancelled
+Lowest: August 2025 (7.33%) — most stable month
+No alarming upward trend — but stubbornly stuck around 8%
+
+4. Return Rate (4.5% - 5.3%)
+
+Even tighter range than cancellations
+December months tend to have slightly higher returns (5.21% in 2024, gift returns?)
+June 2025 highest at 5.27%
+Flat trend — not improving, not worsening
+
+5. Cancellation and return rates are flat and persistent — not a crisis yet, but losing ~13% of orders every single month is a silent GMV drain that compounds over time. 
+
+6. payment mode vs cancellation rate & return rate
+Highest cancellation (8.20%) + highest return rate (5.16%)  though Payment method has negligible impact on cancellation and return rates .
+
+7. Fast delivery eligibility is completely neutral on cancellation and return behavior — the 2-day delivery promise is neither retaining nor losing customers, suggesting the real problem lies in actual delivery execution (delays, carrier performance) rather than the promise itself.
+
+8. customer retention vs first time buyer (we dont have full data for 2024 so comparing only based on 2025)
+
+   2025 Average repeat rate → ~88-96%, Nearly 9 out of 10 orders in 2025 are from returning customers — QuickKart has a loyal and sticky customer base
+
+   Repeat rate is consistently growing through 2025
+        January 2025 → 78.48% repeat
+        August  2025 → 94.26% repeat
+        December 2025 → 96.76% repeat
+
+   2025 December → only 3.24% first time customers (177 orders)
+
+   QuickKart has excellent retention but weak acquisition — while 96% repeat rate sounds great, with only 177 new customers in December 2025
+
+
+
+
+
+
+
