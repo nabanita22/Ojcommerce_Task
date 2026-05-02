@@ -106,3 +106,33 @@ Electronics products are ~25x more expensive than Grocery — meaning even a sma
         Std Dev: ₹22,911
 
         Smartphones (min ₹827), Laptops (min ₹900) and Audio (min ₹1,072) have the highest price floors in the entire catalogue — making them the potential GMV backbone, subject to order volumes from the orders table.
+
+
+# SELLER DATA
+
+*About the data*
+
+========================================
+        SELLER TABLE SUMMARY
+========================================
+  Total Sellers     : 400
+  number of Cities  : 12
+  Duplicates        : 0
+  Missing Values    : False
+========================================
+
+
+1. Mumbai (19.75%), Delhi (16%) and Bangalore (13%) together host ~49% of all sellers — a logistics disruption or policy change in any of these 3 cities could impact nearly half the platform's supply side, posing a significant GMV concentration risk.
+
+
+2. Seller Quality Distribution by City
+      Lucknow is the surprise best performer.
+
+      Chennai - 1 in 3 sellers in Chennai is poorly rated — highest poor seller concentration on the platform.
+
+      Kochi - is a double risk, High poor seller % AND lowest best seller % among all cities — worst seller quality market overall
+
+      Bangalore - 3rd largest seller base but lowest best seller % among top 3 cities.
+
+      Kolkata &  Ahmedabad - Low poor seller concentration + high best seller % ,most reliable supply markets despite being mid-size
+
