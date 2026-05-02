@@ -4,6 +4,8 @@ This is a takehome task given by Ojcommerce
 # Customer's data:
 
 *About the data*
+
+
 ========================================
         CUSTOMER TABLE SUMMARY
 ========================================
@@ -65,3 +67,42 @@ Premium grew the least (+0.58%) — consistent with H1 trend
 
 *QuickKart is moving downmarket — Budget and Value customers are growing while Premium is stagnating or declining. If this trend continues, it will pressure GMV and take-rate since Premium customers typically spend more per order.*
 
+
+#PRODUCT DATA:
+
+*about the data*
+
+
+========================================
+        PRODUCT TABLE SUMMARY
+========================================
+  Total Products    : 3000
+  Categories        : 5
+  Sub Categories    : 21
+  Duplicates        : 0
+  Missing Values    : False
+========================================
+
+1. QuickKart is primarily an Electronics + Fashion marketplace — these two categories alone make up 54% of all products (by quantity).
+
+2. Subcategory distribution is remarkably balanced within each category (by quantity)
+        Every subcategory sits between 19–29% within its category
+        No single subcategory is being over or under stocked
+
+3. by price distribution:
+
+        Electronics avg:    ₹38,000 - ₹41,000
+        Home & Kitchen avg: ₹12,000 - ₹13,000
+        Fashion avg:        ₹3,800 - ₹4,300
+        Books avg:          ₹1,500 - ₹1,600
+        Grocery avg:        ₹987 - ₹1,079
+
+Electronics products are ~25x more expensive than Grocery — meaning even a small drop in Electronics orders will massively impact GMV
+
+4. Smartphones have the highest mean (₹41,482) — single highest GMV driver across all subcategories
+
+5. Electronics — Extremely High Volatility
+        Range : ₹79,011  (₹827 → ₹79,838)
+        Std Dev: ₹22,911
+
+        Smartphones (min ₹827), Laptops (min ₹900) and Audio (min ₹1,072) have the highest price floors in the entire catalogue — making them the potential GMV backbone, subject to order volumes from the orders table.
