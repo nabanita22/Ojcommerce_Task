@@ -141,6 +141,17 @@ Electronics products are ~25x more expensive than Grocery — meaning even a sma
 
 <in orders status what does it mean by shipped ? are those orders lost?>
 
+========================================
+        ORDERS TABLE SUMMARY
+========================================
+  Total Orders               : 100000
+  number of payment method   : 5
+  number of delivary status  : 5
+  Duplicates                 : 0
+  Missing Values             : False
+========================================
+
+
 1. H2 Order Volume (Jul-Dec): 2024 vs 2025
 
    Order volume dipped slightly by -1.47% (496 orders) in H2 2025 vs H2 2024 — the platform is not growing, it's marginally shrinking.
@@ -200,6 +211,18 @@ Highest cancellation (8.20%) + highest return rate (5.16%)  though Payment metho
 
 
 
+
+# Order Items :
+
+========================================
+        ORDERS TABLE SUMMARY
+========================================
+  Total Orders               : 100000
+  Duplicates                 : 0
+  Missing Values             : False
+========================================
+
+QuickKart processed ₹339 Crores in GMV across 100K orders with an average order value of ₹19,961, offering 5% average discount while retaining 11.78% as platform fee — resulting in ₹32 Crores in platform revenue.
 
 
 
