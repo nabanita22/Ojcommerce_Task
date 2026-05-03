@@ -1,5 +1,119 @@
 *QuickKart Analytics Assessment*
 
+## How to Run
+pip install -r requirements.txt
+streamlit run src/app.py
+
+## Project Structure
+Ojcommerce_Task/
+├── src/
+│   ├── app.py
+│   └── calculations.py
+├── Notebooks/
+├── Data/
+├── Plots/
+├── sql/queries.sql
+└── README.md
+
+## Key Assumptions
+- Repeat customer = ≥2 delivered orders
+- Delayed = any Late_1_2d, Late_3_5d, Late_5p or Lost status
+- GMV = quantity × unit_price before platform fee
+- H2 comparison used for YoY (Jul-Dec common window)
+- Shipped orders treated as in-transit, not lost
+
+## AI Usage
+- Used Claude for boilerplate streamlit code
+- All SQL queries written and verified manually
+- All business interpretations are my own
+- Verified all calculations against raw data
+
+# Monthly GMV by city and category
+1. H2 YoY (2024 vs 2025):
+        GMV is mostly flat with mixed signals — November showed the strongest growth (+3.85%, +₹71 Lakhs) but July and December both declined ~2.57-2.68%, suggesting no consistent growth momentum in H2 2025.
+
+   2025 Full Year:
+        Monthly GMV is remarkably stable between 7.84% - 8.68% with February being the weakest (₹17.67 Crores) and August the strongest (₹19.57 Crores) — a difference of only ₹1.9 Crores across 12 months indicating a plateaued business with no seasonal GMV spike even during festive October.
+
+![alt text](plots/monthly_gmv_trend.png)
+
+2. GMV by City :
+
+    Top 3→ Mumbai + Delhi + Bangalore = ₹162 Crores (47% of total GMV)
+    Bottom 3 → Lucknow + Chandigarh + Kochi = ₹31 Crores (9% of total GMV)
+
+    H2 GMV by City: 2024 vs 2025
+    Growing Cities :
+        Pune      → +4.45%  
+        Delhi     → +4.17%  
+        Lucknow   → +3.45%  
+        Mumbai    → +3.30%
+
+    Declining Cities :
+        Chennai   → -6.22%
+        Kolkata   → -5.69%
+        Kochi     → -15.87% ← most alarming
+
+    ![alt text](plots/city_gmv_compare_h2.png) 
+    ![alt text](plots/city_gmv_pct_growth_h2.png)
+
+    GMV growth is a tale of two halves — North Indian cities (Delhi, Pune, Lucknow) growing while South Indian cities (Chennai, Kolkata, Kochi) declining
+
+3. Category GMV Analysis
+   H2 YoY Growth:
+        Electronics  → +0.50%   stable
+        Fashion      → +0.13%   barely growing
+        Grocery      → -0.76%   declining
+        Home&Kitchen → -2.05%   alerming 
+        Books        → -2.91%   alerming
+
+    Home & Kitchen and Books are declining 
+      Both shrinking YoY (-2.05% and -2.91%) — small categories getting even smaller
+
+    No category shows strong growth
+    Highest growth is Electronics at just +0.50% — entire catalogue is stagnant
+    February is weakest month across all categories
+     ![alt text](plots/category_gmv_compare_2025.png)
+     ![alt text](plots/category_gmv_pct_growth_h2.png)
+
+4. city vs category:
+
+   Every city tells the same story — 80% Electronics, 10% Home & Kitchen, 10% everything else — QuickKart has zero category diversification across all markets which is a single point of failure for GMV.
+   ![alt text](plots/city_category_consumption_2025.png)
+
+
+# Monthly count of orders and unique active customers.
+
+    Average orders per month    → ~5,500
+    Average customers per month → ~4,900
+    Gap → ~600 orders
+![alt text](plots/monthly_orders_and_active_customers.png)
+
+    Repeat Customers:
+
+    Using only 2025 full year data, repeat purchase rate grew from 66.01% (Jan 2025) → 91.60% (Dec 2025) — a 25 percentage point jump in 12 months showing strong retention. However with only 167 new customers in December 2025 (3.45%), the platform is running almost entirely on its existing base with negligible new acquisition.
+
+    Unique Active Customers:
+
+    Monthly unique customers are flat between 4,581 - 5,006 throughout 2025 with no meaningful growth — the same ~4,800 customers ordering every month across 12 cities signals a customer acquisition problem that needs immediate attention before the repeat base naturally churns out. 
+
+![alt text](plots/repeat_vs_firsttime.png)
+
+
+# Share of delayed orders by city and carrier.
+
+
+Stop using Delhivery for Jaipur and Lucknow — 82% delay rate on these lanes is indefensible and is the single biggest fixable cause of QuickKart's declining on-time delivery rate.
+
+Jaipur  + Delhivery → 82.36% delayed 
+Lucknow + Delhivery → 82.01% delayed
+Kolkata + Ekart     → 77.41% delayed
+
+![alt text](plots/delay_analysis_by_city_and_carrier.png)
+
+
+
+
 10 Key Findings for QuickKart Leadership
 
 1. Yes — On-Time Delivery IS Declining and It's Seasonal
