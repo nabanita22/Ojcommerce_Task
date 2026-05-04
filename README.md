@@ -83,19 +83,16 @@ Ojcommerce_Task/
 
 
 # Monthly count of orders and unique active customers.
-
-    Average orders per month    → ~5,500
-    Average customers per month → ~4,900
-    Gap → ~600 orders
+        Average orders per month    → ~5,500
+        Average customers per month → ~4,900
+        Gap → ~600 orders
 ![alt text](plots/monthly_orders_and_active_customers.png)
+Repeat Customers:
+Using only 2025 full year data, repeat purchase rate grew from 66.01% (Jan 2025) → 91.60% (Dec 2025) — a 25 percentage point jump in 12 months showing strong retention. However with only 167 new customers in December 2025 (3.45%), the platform is running almost entirely on its existing base with negligible new acquisition.
 
-    Repeat Customers:
+Unique Active Customers:
 
-    Using only 2025 full year data, repeat purchase rate grew from 66.01% (Jan 2025) → 91.60% (Dec 2025) — a 25 percentage point jump in 12 months showing strong retention. However with only 167 new customers in December 2025 (3.45%), the platform is running almost entirely on its existing base with negligible new acquisition.
-
-    Unique Active Customers:
-
-    Monthly unique customers are flat between 4,581 - 5,006 throughout 2025 with no meaningful growth — the same ~4,800 customers ordering every month across 12 cities signals a customer acquisition problem that needs immediate attention before the repeat base naturally churns out. 
+monthly unique customers are flat between 4,581 - 5,006 throughout 2025 with no meaningful growth — the same ~4,800 customers ordering every month across 12 cities signals a customer acquisition problem that needs immediate attention before the repeat base naturally churns out. 
 
 ![alt text](plots/repeat_vs_firsttime.png)
 
