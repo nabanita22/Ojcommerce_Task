@@ -23,7 +23,7 @@ Ojcommerce_Task/
 - Shipped orders treated as in-transit, not lost
 
 ## AI Usage
-- Used Claude for boilerplate streamlit code
+- Used Claude for boilerplate streamlit code and modifying readme file
 - All SQL queries written and verified manually
 - All business interpretations are my own
 - Verified all calculations against raw data
